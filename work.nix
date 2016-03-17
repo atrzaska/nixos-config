@@ -22,7 +22,8 @@
     tig
     source-code-pro
     silver-searcher
-    sublimetext3
+    # sublimetext3
+    atom
     wireshark-qt
     go
     jq
