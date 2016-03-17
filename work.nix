@@ -14,6 +14,7 @@
     nox
     nodejs
     python
+    python34
     ruby
     python27Packages.docker_compose
     qemu
@@ -21,16 +22,10 @@
     tig
     source-code-pro
     silver-searcher
-    sublime
+    sublimetext3
     wireshark-qt
     go
     jq
-    # bind
-    # direnv
-    # disnix
-    # libcaca
-    # libffi
-    # poppler_utils
     libsass
     libxml2
     nmap
@@ -39,14 +34,24 @@
     pkgconfig
     tmux
     tree
+    bind
+    direnv
+    disnix
+    redis
+    linuxPackages.virtualbox
   ];
 
   services.postgresql.enable = true;
   services.postgresql.package = pkgs.postgresql95;
   services.postgresql.authentication = "local all all ident";
   services.postgresql.initialScript = ./configuration.sql;
+  virtualisation.docker.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.libvirtd.enable = true;
+  nixpkgs.config.virtualbox.enableExtensionPack = true;
 
   nixpkgs.config.packageOverrides = pkgs: rec {
     qemu = pkgs.qemu.override { spiceSupport = true; };
   };
+
 }

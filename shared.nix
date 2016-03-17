@@ -4,8 +4,8 @@
   environment.systemPackages = with pkgs; [
     chromium
     curl
-    # di
-    # file
+    di
+    file
     firefoxWrapper
     gcc
     gnumake
@@ -61,6 +61,8 @@
   services.udev.packages = [ pkgs.fuse ];
   programs.zsh.enable = true;
   nixpkgs.config.allowUnfree = true;
+  security.setuidPrograms = [ "pmount" "pumount" ];
+
 
   environment.variables = {
     BROWSER = "chromium-browser";
