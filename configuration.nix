@@ -6,6 +6,7 @@
     ./shared.nix
     ./laptop.nix
     ./work.nix
+    ./nas.nix
   ];
 
   users = {

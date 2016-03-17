@@ -10,7 +10,7 @@
         "browseable" = "yes";
         "guest ok" = "no";
         "valid users" = "andrzej";
-      }
+      };
     };
 
     extraConfig = ''
