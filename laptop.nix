@@ -26,7 +26,7 @@
     mutt
     irssi
     audacious
-    eog
+    gnome3.eog
     gimp
     imagemagick
     pdf2svg

@@ -1,11 +1,15 @@
 { config, pkgs, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    samba
+  ];
+
   services.samba = {
     enable = true;
     shares = {
       share = {
-        path = "/mnt/share";
+        path = "/home/share";
         "read only" = "yes";
         "browseable" = "yes";
         "guest ok" = "no";
