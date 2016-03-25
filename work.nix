@@ -54,5 +54,4 @@
   nixpkgs.config.packageOverrides = pkgs: rec {
     qemu = pkgs.qemu.override { spiceSupport = true; };
   };
-
 }

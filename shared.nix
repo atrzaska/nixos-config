@@ -6,7 +6,7 @@
     curl
     di
     file
-    firefoxWrapper
+    firefox
     gcc
     gnumake
     ghostscript
@@ -61,8 +61,12 @@
   services.udev.packages = [ pkgs.fuse ];
   programs.zsh.enable = true;
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.firefox.enableAdobeFlash = true;
+  nixpkgs.config.firefox.icedtea = true;
+  nixpkgs.config.chromium.enablePepperFlash = true;
+  nixpkgs.config.chromium.enablePepperPDF = true;
+  nixpkgs.config.chromium.icedtea = true;
   security.setuidPrograms = [ "pmount" "pumount" ];
-
 
   environment.variables = {
     BROWSER = "chromium-browser";

@@ -44,6 +44,7 @@
   services.xserver.enable = true;
   services.xserver.layout = "pl";
   services.xserver.autorun = true;
+  services.xserver.vaapiDrivers = [ pkgs.vaapiIntel ];
   services.xserver.videoDrivers = [ "intel" ];
   services.xserver.synaptics.enable = true;
   services.xserver.synaptics.twoFingerScroll = true;
@@ -52,8 +53,4 @@
   services.xserver.windowManager.openbox.enable = true;
   services.xserver.windowManager.i3.enable = true;
   services.xserver.windowManager.default = "i3";
-  nixpkgs.config.firefox.enableGoogleTalkPlugin = true;
-  nixpkgs.config.firefox.enableAdobeFlash = true;
-  nixpkgs.config.chromium.enablePepperFlash = true;
-  nixpkgs.config.chromium.enablePepperPDF = true;
 }
