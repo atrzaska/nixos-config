@@ -2,12 +2,21 @@
 
 {
   environment.systemPackages = with pkgs; [
+    atom
     bundler
+    bind
     ctags
-    docker
+    direnv
+    disnix
     elixir
     git
     gettext
+    go
+    jq
+    libsass
+    libxml2
+    nmap
+    ncat
     nixops
     nix-prefetch-scripts
     nix-repl
@@ -16,42 +25,15 @@
     python
     python34
     ruby
-    python27Packages.docker_compose
-    qemu
-    rethinkdb
+    redis
     tig
-    source-code-pro
     silver-searcher
-    # sublimetext3
-    atom
     wireshark-qt
-    go
-    jq
-    libsass
-    libxml2
-    nmap
-    ncat
     parallel
     pkgconfig
     tmux
     tree
-    bind
-    direnv
-    disnix
-    redis
-    linuxPackages.virtualbox
+    # rethinkdb
+    # sublimetext3
   ];
-
-  services.postgresql.enable = true;
-  services.postgresql.package = pkgs.postgresql95;
-  services.postgresql.authentication = "local all all ident";
-  services.postgresql.initialScript = ./configuration.sql;
-  virtualisation.docker.enable = true;
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.libvirtd.enable = true;
-  # nixpkgs.config.virtualbox.enableExtensionPack = true;
-
-  nixpkgs.config.packageOverrides = pkgs: rec {
-    qemu = pkgs.qemu.override { spiceSupport = true; };
-  };
 }
