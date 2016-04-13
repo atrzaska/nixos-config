@@ -52,12 +52,11 @@
   services.xserver.videoDrivers = [ "intel" ];
   services.xserver.synaptics.enable = true;
   services.xserver.synaptics.twoFingerScroll = true;
-  services.xserver.autorun = false;
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.xterm.enable = false;
-  services.xserver.desktopManager.default = "none";
+  services.xserver.desktopManager.default = "gnome3";
   services.xserver.desktopManager.gnome3.enable = true;
-  services.xserver.windowManager.openbox.enable = true;
-  services.xserver.windowManager.i3.enable = true;
-  services.xserver.windowManager.default = "i3";
+  # services.xserver.windowManager.openbox.enable = true;
+  # services.xserver.windowManager.i3.enable = true;
+  # services.xserver.windowManager.default = "i3";
 }
