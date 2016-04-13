@@ -10,8 +10,6 @@
 
   virtualisation.docker.enable = true;
   virtualisation.virtualbox.host.enable = true;
-  # virtualisation.libvirtd.enable = true;
-  # nixpkgs.config.virtualbox.enableExtensionPack = true;
 
   nixpkgs.config.packageOverrides = pkgs: rec {
     qemu = pkgs.qemu.override { spiceSupport = true; };

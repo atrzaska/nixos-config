@@ -7,7 +7,6 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    # i3
     xbindkeys
     xfce.thunar
     xfce.xfconf
@@ -21,8 +20,6 @@
     i3status
     nitrogen
     scrot
-
-    # personal
     ffmpeg
     libreoffice
     mpd
@@ -56,7 +53,4 @@
   services.xserver.desktopManager.xterm.enable = false;
   services.xserver.desktopManager.default = "gnome3";
   services.xserver.desktopManager.gnome3.enable = true;
-  # services.xserver.windowManager.openbox.enable = true;
-  # services.xserver.windowManager.i3.enable = true;
-  # services.xserver.windowManager.default = "i3";
 }

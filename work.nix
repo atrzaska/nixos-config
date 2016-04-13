@@ -33,7 +33,5 @@
     pkgconfig
     tmux
     tree
-    # rethinkdb
-    # sublimetext3
   ];
 }
