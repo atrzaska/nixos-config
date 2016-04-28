@@ -3,6 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./firewall.nix
     ./fonts.nix
     ./shared.nix
     ./laptop.nix

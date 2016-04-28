@@ -5,6 +5,7 @@
   networking.firewall.enable = true;
   networking.firewall.allowPing = true;
   networking.firewall.logRefusedConnections = false;
+  networking.nameservers = [ "8.8.8.8" "8.8.4.4"];
 
   networking.firewall.allowedTCPPorts = [
     22
