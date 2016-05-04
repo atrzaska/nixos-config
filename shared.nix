@@ -3,7 +3,6 @@
 {
   environment.systemPackages = with pkgs; [
     cryptsetup
-    # chromium
     google-chrome
     curl
     di
@@ -35,12 +34,25 @@
     jre
 
     # custom installed
+    # chromium
+    # sublimetext3-3103
+    # thunar
+    # thunar-volman
+    # zlib
+    # zlib-static
+    # icedtea-web
+    # libmtp
+    # librsvg
+    # libva-intel-driver
+    # libva-vdpau-driver
+    # libvdpau
+    # libvdpau-va-gl
+    # libxml2
     acpi
     adwaita-icon-theme
     atom
     bundix
     bundler
-    # chromium
     compton
     conky
     cryptsetup
@@ -54,16 +66,8 @@
     gnome-themes-standard
     gnupg
     hdparm
-    # icedtea-web
     irssi
-    # libmtp
     libreoffice
-    # librsvg
-    # libva-intel-driver
-    # libva-vdpau-driver
-    # libvdpau
-    # libvdpau-va-gl
-    # libxml2
     lxappearance
     mpv
     mutt
@@ -71,31 +75,25 @@
     nodejs-keybase
     obconf
     openconnect
-    openjre-8u76b00
     pavucontrol
     perl-Image-ExifTool
     pg_top
     pkg-config
     postgresql
     powertop
-    python2.7-pygtk
-    python3.5-livestreamer
+    pyGtkGlade
+    python35Packages.livestreamer
     redis
     rtorrent
-    screenFetch-2016-01-13
+    screenfetch
     scrot
-    # sublimetext3-3103
-    # thunar
-    # thunar-volman
     tilda
-    unetbootin-613
+    unetbootin
     unrar
     which
-    wireless-tools-29
+    wirelesstools
     xbindkeys
     xfconf
-    # zlib
-    # zlib-static
   ];
 
   boot.loader.grub.enable = true;
