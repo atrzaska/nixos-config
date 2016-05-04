@@ -49,7 +49,7 @@
     # libvdpau-va-gl
     # libxml2
     acpi
-    adwaita-icon-theme
+    gnome3.adwaita-icon-theme
     atom
     bundix
     bundler
@@ -57,13 +57,13 @@
     conky
     cryptsetup
     direnv
-    eog
+    gnome3.eog
     erlang
     gettext
     gimp
     git-crypt
-    gnome-system-monitor
-    gnome-themes-standard
+    gnome3.gnome-system-monitor
+    gnome3.gnome_themes_standard
     gnupg
     hdparm
     irssi
@@ -72,13 +72,13 @@
     mpv
     mutt
     ncmpcpp
-    nodejs-keybase
+    keybase
     obconf
     openconnect
     pavucontrol
-    perl-Image-ExifTool
+    perlPackages.ImageExifTool
     pg_top
-    pkg-config
+    pkgconfig
     postgresql
     powertop
     pyGtkGlade
@@ -93,7 +93,7 @@
     which
     wirelesstools
     xbindkeys
-    xfconf
+    xfce.xfconf
   ];
 
   boot.loader.grub.enable = true;
@@ -119,6 +119,6 @@
   security.setuidPrograms = [ "pmount" "pumount" ];
 
   environment.variables = {
-    BROWSER = "chromium-browser";
+    BROWSER = "google-chrome-stable";
   };
 }
