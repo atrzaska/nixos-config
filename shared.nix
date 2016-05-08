@@ -20,11 +20,11 @@
     keychain
     lsof
     ntfs3g
-    man_db
-    manpages
+    # man_db
+    # manpages
     nettools
     pmount
-    posix_man_pages
+    # posix_man_pages
     pwgen
     sshfsFuse
     wget
@@ -115,7 +115,6 @@
   nixpkgs.config.firefox.icedtea = true;
   # nixpkgs.config.chromium.enablePepperFlash = true;
   # nixpkgs.config.chromium.enablePepperPDF = true;
-  # nixpkgs.config.chromium.icedtea = true;
   security.setuidPrograms = [ "pmount" "pumount" ];
 
   environment.variables = {
