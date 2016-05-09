@@ -8,8 +8,8 @@
 
   environment.systemPackages = with pkgs; [
     xbindkeys
-    xfce.thunar
-    xfce.xfconf
+    # xfce.thunar
+    # xfce.xfconf
     xorg.xbacklight
     p7zip
     unzip
@@ -22,9 +22,9 @@
     scrot
     ffmpeg
     libreoffice
-    mpd
-    mpc_cli
-    ncmpcpp
+    # mpd
+    # mpc_cli
+    # ncmpcpp
     mutt
     irssi
     audacious

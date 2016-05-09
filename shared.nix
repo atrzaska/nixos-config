@@ -32,6 +32,7 @@
     xdotool
     zsh
     jre
+    dropbox
 
     # custom installed
     # chromium
