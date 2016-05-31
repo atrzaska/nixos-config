@@ -2,29 +2,23 @@
 
 {
   environment.systemPackages = with pkgs; [
-    cryptsetup
     google-chrome
     curl
     di
     file
-    firefox
     gcc
     gnumake
     ghostscript
     htop
     iftop
-    inetutils
     inotify-tools
     jfsutils
     keepass
     keychain
     lsof
     ntfs3g
-    # man_db
-    # manpages
     nettools
     pmount
-    # posix_man_pages
     pwgen
     sshfsFuse
     wget
@@ -33,48 +27,27 @@
     zsh
     jre
     dropbox
-
-    # custom installed
-    # chromium
-    # sublimetext3-3103
-    # thunar
-    # thunar-volman
-    # zlib
-    # zlib-static
-    # icedtea-web
-    # libmtp
-    # librsvg
-    # libva-intel-driver
-    # libva-vdpau-driver
-    # libvdpau
-    # libvdpau-va-gl
-    # libxml2
+    transmission_gtk
+    vlc
     acpi
-    gnome3.adwaita-icon-theme
     atom
     bundix
     bundler
-    compton
-    conky
     cryptsetup
     direnv
-    gnome3.eog
     erlang
     gettext
     gimp
-    git-crypt
+    gitAndTools.git-crypt
+    gnome3.eog
     gnome3.gnome-system-monitor
-    gnome3.gnome_themes_standard
-    gnupg
     hdparm
     irssi
     libreoffice
-    lxappearance
     mpv
     mutt
     ncmpcpp
     keybase
-    obconf
     openconnect
     pavucontrol
     perlPackages.ImageExifTool
@@ -82,7 +55,6 @@
     pkgconfig
     postgresql
     powertop
-    pyGtkGlade
     python35Packages.livestreamer
     redis
     rtorrent
@@ -93,8 +65,6 @@
     unrar
     which
     wirelesstools
-    xbindkeys
-    xfce.xfconf
   ];
 
   boot.loader.grub.enable = true;
@@ -112,10 +82,6 @@
   services.udev.packages = [ pkgs.fuse ];
   programs.zsh.enable = true;
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.firefox.enableAdobeFlash = true;
-  nixpkgs.config.firefox.icedtea = true;
-  # nixpkgs.config.chromium.enablePepperFlash = true;
-  # nixpkgs.config.chromium.enablePepperPDF = true;
   security.setuidPrograms = [ "pmount" "pumount" ];
 
   environment.variables = {

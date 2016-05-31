@@ -7,34 +7,21 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    xbindkeys
-    # xfce.thunar
-    # xfce.xfconf
-    xorg.xbacklight
     p7zip
     unzip
     unrar
     mpv
-    lxappearance
-    dmenu
-    i3status
-    nitrogen
     scrot
     ffmpeg
     libreoffice
-    # mpd
-    # mpc_cli
-    # ncmpcpp
     mutt
     irssi
     audacious
     gnome3.eog
     gimp
     imagemagick
-    pdf2svg
     rxvt_unicode-with-plugins
     exif
-    glxinfo
     ncdu
   ];
 

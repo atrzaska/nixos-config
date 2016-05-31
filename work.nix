@@ -9,12 +9,10 @@
     direnv
     disnix
     elixir
-    git
+    gitFull
     gettext
     go
     jq
-    libsass
-    libxml2
     nmap
     ncat
     nixops
@@ -33,5 +31,6 @@
     pkgconfig
     tmux
     tree
+    gnupg
   ];
 }

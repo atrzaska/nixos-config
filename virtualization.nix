@@ -2,9 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    docker
     qemu
-    linuxPackages.virtualbox
     python27Packages.docker_compose
   ];
 
