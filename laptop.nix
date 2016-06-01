@@ -17,7 +17,6 @@
     mutt
     irssi
     audacious
-    gnome3.eog
     gimp
     imagemagick
     rxvt_unicode-with-plugins

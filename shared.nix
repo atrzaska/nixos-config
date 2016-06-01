@@ -55,7 +55,6 @@
     pkgconfig
     postgresql
     powertop
-    python35Packages.livestreamer
     redis
     rtorrent
     screenfetch
