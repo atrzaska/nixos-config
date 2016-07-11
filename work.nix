@@ -32,5 +32,26 @@
     tmux
     tree
     gnupg
+
+    # rvm
+    gcc
+    bash
+    curl
+    openssl
+    sqlite
+    patch
+    readline
+    zlib
+    libyaml
+    libxml2
+    libxslt
+    libtool
+    bison
+    v8
+    nodejs
+    which
+    pkgconfig
+    libyaml
+    ncurses
   ];
 }
