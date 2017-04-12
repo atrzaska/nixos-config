@@ -64,11 +64,25 @@
     unrar
     which
     wirelesstools
+    xarchiver
   ];
 
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
   boot.loader.grub.device = "/dev/sda";
+  boot.loader.grub.extraEntries = ''
+    menuentry "Windows 10" {
+      insmod part_msdos
+      insmod ntfs
+      set root='hd0,msdos1'
+      if [ x$feature_platform_search_hint = xy ]; then
+        search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1  26BA008B45CBCAEA
+      else
+        search --no-floppy --fs-uuid --set=root 26BA008B45CBCAEA
+      fi
+      chainloader +1
+    }
+  '';
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.cleanTmpDir = true;
   time.timeZone = "Europe/Warsaw";
