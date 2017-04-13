@@ -32,8 +32,6 @@
     tmux
     tree
     gnupg
-
-    # rvm
     gcc
     bash
     curl
